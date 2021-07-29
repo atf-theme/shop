@@ -12,10 +12,6 @@
           <h2 class="{% if block.settings.heading_size == 'small' %}h2{% else %}h1{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
         {%- when 'text' -%}
           <div class="rich-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
-        {%- when 'button' -%}
-          <a{% if block.settings.button_link == blank %} aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
-            {{ block.settings.button_label | escape }}
-          </a>
       {%- endcase -%}
     {%- endfor -%}
   </div>
@@ -104,30 +100,6 @@
           "label": "t:sections.rich-text.blocks.text.settings.text.label"
         }
       ]
-    },
-    {
-      "type": "button",
-      "name": "t:sections.rich-text.blocks.button.name",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "text",
-          "id": "button_label",
-          "default": "Button label",
-          "label": "t:sections.rich-text.blocks.button.settings.button_label.label"
-        },
-        {
-          "type": "url",
-          "id": "button_link",
-          "label": "t:sections.rich-text.blocks.button.settings.button_link.label"
-        },
-        {
-          "type": "checkbox",
-          "id": "button_style_secondary",
-          "default": false,
-          "label": "t:sections.rich-text.blocks.button.settings.button_style_secondary.label"
-        }
-      ]
     }
   ],
   "presets": [
@@ -139,9 +111,6 @@
         },
         {
           "type": "text"
-        },
-        {
-          "type": "button"
         }
       ]
     }

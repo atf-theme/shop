@@ -153,7 +153,7 @@
     margin-top: 4rem;
   }
 
-  .grid--2-col-tablet .multicolumn-list__item:nth-of-type(-n + 2) {
+  .grid--2-col-tablet .multicolumn-list__item:nth-of-type(-n + 3) {
     margin-top: 0;
   }
 }
@@ -164,7 +164,7 @@
   }
 
   .grid--2-col-tablet.grid--4-col-desktop
-    .multicolumn-list__item:nth-of-type(-n + 3) {
+    .multicolumn-list__item:nth-of-type(-n + 4) {
     margin-top: 0;
   }
 }

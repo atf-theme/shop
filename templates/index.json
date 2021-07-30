@@ -6,30 +6,22 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand"
+            "heading": "Hentze Family Farm"
           }
         },
-        "button": {
-          "type": "buttons",
+        "2e6f8791-e355-48ef-9455-351e59d11056": {
+          "type": "text",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "Century Family Farm in Junction City"
           }
         }
       },
       "block_order": [
         "heading",
-        "button"
+        "2e6f8791-e355-48ef-9455-351e59d11056"
       ],
       "settings": {
-        "desktop_text_box_position": "flex-end",
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "adapt_height_first_image": false
+        "image": "shopify:\/\/shop_images\/small-family-tends-to-their-cows.jpg"
       }
     },
     "16275876157298bbfc": {
@@ -38,8 +30,7 @@
         "16275876157298bbfc-0": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "medium"
+            "heading": "Talk about your brand"
           }
         },
         "16275876157298bbfc-1": {
@@ -54,8 +45,6 @@
         "16275876157298bbfc-1"
       ],
       "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
       }
     },
     "featured_products": {

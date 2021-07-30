@@ -61,38 +61,28 @@
         "show_vendor": false
       }
     },
-    "image_text": {
-      "type": "image-with-text",
+    "16276299100ebb3c7f": {
+      "type": "image-banner",
       "blocks": {
-        "heading": {
+        "16276299100ebb3c7f-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text"
+            "heading": "Celebrate"
           }
         },
-        "text": {
+        "16276299100ebb3c7f-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
+            "text": "Farm Events"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "button"
+        "16276299100ebb3c7f-0",
+        "16276299100ebb3c7f-1"
       ],
       "settings": {
-        "height": "adapt",
-        "color_scheme": "background-1",
-        "layout": "image_first"
+        "image": "shopify:\/\/shop_images\/outdoor-dessert-table-filled-with-cakes-and-macarons.jpg"
       }
     }
   },
@@ -100,6 +90,6 @@
     "image_banner",
     "16275876157298bbfc",
     "featured_products",
-    "image_text"
+    "16276299100ebb3c7f"
   ]
 }

@@ -47,12 +47,54 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/thin-plant-stems-in-sun.jpg"
           }
+        },
+        "1c052aa3-d50c-4748-85b4-2a5603172db6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cute-curious-cat.jpg"
+          }
+        },
+        "e290421f-41d2-43b0-b3ba-e1c7b9084b22": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dog-running-in-fall-leaves.jpg"
+          }
+        },
+        "bf2680cc-a99f-4907-87d8-ad5af3f4d33e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/couple-in-love-walk-holding-hands.jpg"
+          }
+        },
+        "296cde09-1c18-44ce-9e0c-3d67cbaa9b42": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/golden-autumn-leaves.jpg"
+          }
+        },
+        "0308b266-70cb-4af3-bb50-392f6a046370": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/peaches.jpg"
+          }
+        },
+        "4b1e9e28-ab8d-4c8c-b421-5c8fe20490f7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bikes-take-the-turn.jpg"
+          }
         }
       },
       "block_order": [
         "1627685845e5c4f80a-0",
         "1627685845e5c4f80a-1",
-        "1627685845e5c4f80a-2"
+        "1627685845e5c4f80a-2",
+        "1c052aa3-d50c-4748-85b4-2a5603172db6",
+        "e290421f-41d2-43b0-b3ba-e1c7b9084b22",
+        "bf2680cc-a99f-4907-87d8-ad5af3f4d33e",
+        "296cde09-1c18-44ce-9e0c-3d67cbaa9b42",
+        "0308b266-70cb-4af3-bb50-392f6a046370",
+        "4b1e9e28-ab8d-4c8c-b421-5c8fe20490f7"
       ],
       "settings": {
         "title": "",

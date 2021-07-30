@@ -146,7 +146,7 @@
 
   .grid--2-col-tablet .multicolumn-list__item {
     margin-top: 1rem;
-    max-width: 50%;
+    max-width: 33%;
   }
 
   .background-none .grid--2-col-tablet .multicolumn-list__item {
@@ -164,7 +164,7 @@
   }
 
   .grid--2-col-tablet.grid--4-col-desktop
-    .multicolumn-list__item:nth-of-type(-n + 4) {
+    .multicolumn-list__item:nth-of-type(-n + 3) {
     margin-top: 0;
   }
 }

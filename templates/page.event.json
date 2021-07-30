@@ -26,11 +26,47 @@
       ],
       "settings": {
       }
+    },
+    "1627685845e5c4f80a": {
+      "type": "multicolumn",
+      "blocks": {
+        "1627685845e5c4f80a-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nature-mountains-flower-landscape-adventure.jpg"
+          }
+        },
+        "1627685845e5c4f80a-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hiking-the-path-up.jpg"
+          }
+        },
+        "1627685845e5c4f80a-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/thin-plant-stems-in-sun.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "1627685845e5c4f80a-0",
+        "1627685845e5c4f80a-1",
+        "1627685845e5c4f80a-2"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "square",
+        "column_alignment": "left",
+        "background_style": "none"
+      }
     }
   },
   "order": [
     "main",
     "16276611577864f9e1",
-    "rich-text"
+    "rich-text",
+    "1627685845e5c4f80a"
   ]
 }

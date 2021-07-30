@@ -386,6 +386,18 @@ h6,
   margin-block-end: 1.67em;
 }
 
+p,
+.p {
+  font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 750px) {
+  p,
+  .p {
+    font-size: 2.4rem;
+  }
+}
+
 blockquote {
   font-style: italic;
   color: rgba(var(--color-foreground), 0.75);

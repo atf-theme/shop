@@ -63,7 +63,7 @@
             </h2>
           {%- when 'text' -%}
             <div class="banner__text" {{ block.shopify_attributes }}>
-              <span>{{ block.settings.text | escape }}</span>
+              <span>{{ block.settings.text }}</span>
             </div>
         {%- endcase -%}
       {%- endfor -%}

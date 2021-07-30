@@ -5,6 +5,12 @@
       "settings": {
       }
     },
+    "162766114274f75b3f": {
+      "type": "image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/italian-farm-buildings.jpg"
+      }
+    },
     "rich-text": {
       "type": "rich-text",
       "blocks": {
@@ -24,6 +30,7 @@
   },
   "order": [
     "main",
+    "162766114274f75b3f",
     "rich-text"
   ]
 }

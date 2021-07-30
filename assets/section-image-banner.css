@@ -186,9 +186,13 @@
   }
 }
 
-.banner__heading > *,
+.banner__heading > * {
+  color: white;
+}
+
 .banner__text > * {
   word-wrap: break-word;
+  color: white;
 }
 
 .banner__heading {

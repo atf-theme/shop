@@ -26,11 +26,23 @@
       ],
       "settings": {
       }
+    },
+    "1627719671005c61a0": {
+      "type": "farming-practices",
+      "settings": {
+        "certified_organic": true,
+        "cover_crops": true,
+        "crop_rotation": true,
+        "integrated_crops_and_livestock": true,
+        "integrated_pest_management": true,
+        "no_till_reduced_till": true
+      }
     }
   },
   "order": [
     "main",
     "162766114274f75b3f",
-    "rich-text"
+    "rich-text",
+    "1627719671005c61a0"
   ]
 }

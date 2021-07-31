@@ -45,7 +45,7 @@
       %}
 
       <slider-component class="slider-mobile-gutter">
-        <ul class="grid grid--2-col{% if products_to_display == 4 or block.settings.collection == blank %} grid--2-col-tablet grid--4-col-desktop{% else %} grid--3-col-tablet{% endif %}{% if products_to_display > 5 %} grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}{% if block.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} slider slider--tablet grid--peek{% endif %}{% if section.settings.show_view_all == false or block.settings.collection.products.size < section.settings.products_to_show %} negative-margin{% endif %}{% if section.settings.show_view_all and block.settings.collection.products.size > section.settings.products_to_show %} negative-margin--small{% endif %}" role="list">
+        <ul class="grid grid--2-col grid--2-col-tablet grid--4-col-desktop{% if products_to_display > 5 %} grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}{% if block.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} slider slider--tablet grid--peek{% endif %}{% if section.settings.show_view_all == false or block.settings.collection.products.size < section.settings.products_to_show %} negative-margin{% endif %}{% if section.settings.show_view_all and block.settings.collection.products.size > section.settings.products_to_show %} negative-margin--small{% endif %}" role="list">
           {%- for product in block.settings.collection.products limit: section.settings.products_to_show -%}
             <li class="grid__item{% if block.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} slider__slide{% endif %}">
               {% render 'product-card',
@@ -63,6 +63,13 @@
               </li>
             {%- endfor -%}
           {%- endfor -%}
+          {% if products_to_display < 4 and products_to_display>0 %}
+          {%- for i in (products_to_display..3) -%}
+          <li class="grid__item">
+            {% render 'empty-product-card' %}
+          </li>
+          {%- endfor -%}
+          {%- endif -%}
         </ul>
         {%- if block.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 -%}
           <div class="slider-buttons no-js-hidden{% if block.settings.collection.all_products_count < 4 %} medium-hide{% endif %}{% if block.settings.collection.all_products_count < 3 %} small-hide{% endif %}">
@@ -114,10 +121,6 @@
    	margin-left: 15px;
     margin-right: 15px;
   }}
-  
-  .productGrid{
-   border-style: groove; 
-  }
   
   .productGrid_header {
     display: flex;

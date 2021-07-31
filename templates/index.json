@@ -84,12 +84,56 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/outdoor-dessert-table-filled-with-cakes-and-macarons.jpg"
       }
+    },
+    "162771690632b2aedd": {
+      "type": "product-grid",
+      "blocks": {
+        "162771690632b2aedd-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nuts"
+          }
+        },
+        "162771690632b2aedd-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "fruits"
+          }
+        },
+        "162771690632b2aedd-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "162771690632b2aedd-3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Farm Products Shop"
+          }
+        }
+      },
+      "block_order": [
+        "162771690632b2aedd-1",
+        "162771690632b2aedd-0",
+        "162771690632b2aedd-2",
+        "162771690632b2aedd-3"
+      ],
+      "settings": {
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": false
+      }
     }
   },
   "order": [
     "image_banner",
     "16275876157298bbfc",
     "featured_products",
-    "16276299100ebb3c7f"
+    "16276299100ebb3c7f",
+    "162771690632b2aedd"
   ]
 }

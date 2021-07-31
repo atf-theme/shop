@@ -47,28 +47,41 @@
       "settings": {
       }
     },
+<<<<<<< HEAD
     "162771690632b2aedd": {
       "type": "product-grid",
       "blocks": {
         "162771690632b2aedd-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "nuts"
-          }
-        },
-        "162771690632b2aedd-0": {
+=======
+    "16277195734d39e123": {
+      "type": "product-grid",
+      "blocks": {
+        "16277195734d39e123-0": {
           "type": "featured_collection",
           "settings": {
             "collection": "fruits"
           }
         },
-        "162771690632b2aedd-2": {
+        "16277195734d39e123-1": {
+>>>>>>> main
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "vegetables"
           }
         },
-        "162771690632b2aedd-3": {
+        "16277195734d39e123-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "squash"
+          }
+        },
+        "d128f8ab-f7fd-4770-9805-c50a6a37cbe6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nuts"
+          }
+        },
+        "16277195734d39e123-3": {
           "type": "heading",
           "settings": {
             "heading": "Farm Products Shop"
@@ -76,10 +89,11 @@
         }
       },
       "block_order": [
-        "162771690632b2aedd-1",
-        "162771690632b2aedd-0",
-        "162771690632b2aedd-2",
-        "162771690632b2aedd-3"
+        "16277195734d39e123-0",
+        "16277195734d39e123-1",
+        "16277195734d39e123-2",
+        "d128f8ab-f7fd-4770-9805-c50a6a37cbe6",
+        "16277195734d39e123-3"
       ],
       "settings": {
         "products_to_show": 4,
@@ -111,14 +125,22 @@
         "16276299100ebb3c7f-1"
       ],
       "settings": {
+<<<<<<< HEAD
         "image": "shopify:\/\/shop_images\/outdoor-dessert-table-filled-with-cakes-and-macarons.jpg"
+=======
+        "image": "shopify:\/\/shop_images\/beautiful-centerpiece-at-an-outdoor-wedding.jpg"
+>>>>>>> main
       }
     }
   },
   "order": [
     "image_banner",
     "16275876157298bbfc",
+<<<<<<< HEAD
     "162771690632b2aedd",
+=======
+    "16277195734d39e123",
+>>>>>>> main
     "16276299100ebb3c7f"
   ]
 }

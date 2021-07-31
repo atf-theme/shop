@@ -1,0 +1,280 @@
+<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-badge.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'template-collection.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-price.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-badge.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'template-collection.css' | asset_url | stylesheet_tag }}</noscript>
+
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+
+<section>
+  <div class= "productGrid">
+  {%- if section.blocks.size > 0 -%}
+        {%- for block in section.blocks -%}
+          {% case block.type %}
+            {%- when 'heading' -%}
+              <h1 class = "productGrid_header" {{ block.shopify_attributes }}>
+                {{ block.settings.heading}}
+              </h1>
+  		{%- endcase -%}	
+ 		{%- endfor -%}	
+  <div class={{section.id}}>
+      {%- for block in section.blocks -%}
+          {% case block.type %}
+            {%- when 'featured_collection' -%}
+          <input type="radio" id={{ block.id }}"tab" name={{section.id}} {%- if block== section.blocks[0] -%} checked = "checked"{%- endif -%}>
+          <label for={{ block.id }}"tab">{% if block.settings.collection.title %} {{ block.settings.collection.title }} {% else %} Example Tab {% endif %} </label>
+          <div class="tabs">
+		<div class="collection page-width{% if section.settings.swipe_on_mobile == true and block.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %}">
+		<div class="{% if section.settings.show_view_all and section.settings.swipe_on_mobile %}title-wrapper-with-link{% endif %}{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}{% if block.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} title-wrapper--self-padded-tablet-down{% endif %}">
+
+        {%- if section.settings.show_view_all and section.settings.swipe_on_mobile -%}
+          <a href="{{ block.settings.collection.url }}" class="link underlined-link large-up-hide">{{ 'sections.featured_collection.view_all' | t }}</a>
+        {%- endif -%}
+      </div>
+
+      {%- liquid
+        assign products_to_display = block.settings.collection.all_products_count
+
+        if block.settings.collection.all_products_count > section.settings.products_to_show
+          assign products_to_display = section.settings.products_to_show
+        endif
+      %}
+
+      <slider-component class="slider-mobile-gutter">
+        <ul class="grid grid--2-col{% if products_to_display == 4 or block.settings.collection == blank %} grid--2-col-tablet grid--4-col-desktop{% else %} grid--3-col-tablet{% endif %}{% if products_to_display > 5 %} grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}{% if block.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} slider slider--tablet grid--peek{% endif %}{% if section.settings.show_view_all == false or block.settings.collection.products.size < section.settings.products_to_show %} negative-margin{% endif %}{% if section.settings.show_view_all and block.settings.collection.products.size > section.settings.products_to_show %} negative-margin--small{% endif %}" role="list">
+          {%- for product in block.settings.collection.products limit: section.settings.products_to_show -%}
+            <li class="grid__item{% if block.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} slider__slide{% endif %}">
+              {% render 'product-card',
+                product_card_product: product,
+                media_size: "square",
+                show_secondary_image: section.settings.show_secondary_image,
+                add_image_padding: section.settings.add_image_padding,
+                show_vendor: section.settings.show_vendor
+              %}
+            </li>
+          {%- else -%}
+            {%- for i in (1..4) -%}
+              <li class="grid__item">
+                {% render 'product-card-placeholder' %}
+              </li>
+            {%- endfor -%}
+          {%- endfor -%}
+        </ul>
+        {%- if block.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 -%}
+          <div class="slider-buttons no-js-hidden{% if block.settings.collection.all_products_count < 4 %} medium-hide{% endif %}{% if block.settings.collection.all_products_count < 3 %} small-hide{% endif %}">
+            <div class="slider-counter caption">
+              <span class="slider-counter--current">1</span>
+              <span aria-hidden="true"> / </span>
+              <span class="visually-hidden">{{ 'accessibility.of' | t }}</span>
+              <span class="slider-counter--total">{{ products_to_display }}</span>
+            </div>
+            <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
+            <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
+          </div>
+        {%- endif -%}
+      </slider-component>
+
+{%- if section.settings.show_view_all and block.settings.collection.all_products_count > section.settings.products_to_show -%}
+  <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
+    <a href="{{ block.settings.collection.url }}"
+      class="button"
+      aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: block.settings.collection.title }}"
+    >
+      {{ 'sections.featured_collection.view_all' | t }}
+    </a>
+  </div>
+{%- endif -%}
+</div>
+          </div>
+  		{%- endcase -%}	
+ 		{%- endfor -%}	
+  {%- endif -%}
+  </div>
+  </div>
+
+<style>
+  @media screen and (min-width: 1200px){
+  .productGrid{
+   	margin-left: 6.75%;
+    margin-right: 6.75%;
+  }}
+  
+  @media screen and (min-width: 750px) and (max-width:1200px) {
+  .productGrid{
+   	margin-left: 50px;
+    margin-right: 50px;
+  }}
+  
+  @media screen and (max-width: 749px){
+  .productGrid{
+   	margin-left: 15px;
+    margin-right: 15px;
+  }}
+  
+  .productGrid{
+   border-style: groove; 
+  }
+  
+  .productGrid_header {
+    display: flex;
+    justify-content: center;
+    --font-heading-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu, Helvetica Neue, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    --font-heading-style: normal;
+    --font-heading-weight: 300;
+  	text-decoration: underline;
+    margin-block-end: 0;
+    margin-block-start:0;
+    font-style: italic;
+  }
+  
+  .{{section.id}} {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+ 	justify-content: center;
+    background: 252, 249, 230;
+}
+.{{section.id}} input[type="radio"] {
+    display: none;
+}
+.{{section.id}} label {
+  	display: flex;
+    padding: 5px;
+    background: #F0F3FC;
+  	border-style: inset;
+  	border-radius: 25px;
+  	margin: 5px;
+  	margin-bottom:0px;
+}
+
+.{{section.id}} .tabs {
+    order: 1;
+    width: 100%;
+    padding: 10px;
+  	padding-top: 0px;
+    background: 252, 249, 230;
+    display: none;
+}
+
+  .{{section.id}} input[type="radio"]:checked + label {
+    background: #fff;
+}
+  
+.{{section.id}} input[type='radio']:checked + label + .tabs {
+    display: block;
+}
+
+
+  </style>
+</section>
+
+{% schema %}
+{
+  "name": "Product Grid",
+  "tag": "section",
+  "class": "spaced-section",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "min": 2,
+      "max": 12,
+      "step": 2,
+      "default": 4,
+      "label": "t:sections.featured-collection.settings.products_to_show.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_all",
+      "default": true,
+      "label": "t:sections.featured-collection.settings.show_view_all.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "swipe_on_mobile",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.swipe_on_mobile.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.featured-collection.settings.header.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_secondary_image",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.show_secondary_image.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "add_image_padding",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.add_image_padding.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.show_vendor.label"
+    }
+  ],
+  "blocks": [
+        {
+      "type": "heading",
+      "name": "t:sections.image-with-text.blocks.heading.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Farm Products Shop",
+          "label": "t:sections.image-with-text.blocks.heading.settings.heading.label"
+        }
+      ]
+    },
+    {
+      "type": "featured_collection",
+      "name": "t:sections.collection-list.blocks.featured_collection.name",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "t:sections.collection-list.blocks.featured_collection.settings.collection.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Grid",
+      "blocks": [
+        {
+          "type": "featured_collection"
+        },
+        {
+          "type": "featured_collection"
+        },
+        {
+          "type": "featured_collection"
+        },
+		{"type": "heading"
+		}
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

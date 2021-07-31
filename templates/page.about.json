@@ -37,12 +37,29 @@
         "integrated_pest_management": true,
         "no_till_reduced_till": true
       }
+    },
+    "1627705273d7b7d14a": {
+      "type": "rich-text",
+      "blocks": {
+        "1627705273d7b7d14a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you grow-be it flowers or produce or just a patch of grass in your front lawn-then you know that growing without herbicides or pesticides makes for a lot more hand labor. So why do we put the extra work into growing sustainably? Obviously, we don’t want to live around, work around or eat chemicals, so we don’t put them on the food we grow. But in addition, we love the land we live on and view it as our opportunity to leave a little corner of the world as healthy and biodiverse as possible.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1627705273d7b7d14a-1"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "162766114274f75b3f",
     "rich-text",
-    "1627704843ea7b4b94"
+    "1627704843ea7b4b94",
+    "1627705273d7b7d14a"
   ]
 }

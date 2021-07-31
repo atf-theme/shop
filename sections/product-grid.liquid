@@ -63,13 +63,13 @@
               </li>
             {%- endfor -%}
           {%- endfor -%}
-          {% if products_to_display < 4 and products_to_display >0 %}
-          	{%- for i in (products_to_display..4) -%}
-          	              <li class="grid__item">
-                {% render 'product-card-placeholder' %}
-              </li>
-                      {%- endfor -%}
-                      {%- endif -%}
+          {% if products_to_display < 4 and products_to_display>0 %}
+          {%- for i in (products_to_display..3) -%}
+          <li class="grid__item">
+            {% render 'product-card-placeholder' %}
+          </li>
+          {%- endfor -%}
+          {%- endif -%}
         </ul>
         {%- if block.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 -%}
           <div class="slider-buttons no-js-hidden{% if block.settings.collection.all_products_count < 4 %} medium-hide{% endif %}{% if block.settings.collection.all_products_count < 3 %} small-hide{% endif %}">

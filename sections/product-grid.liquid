@@ -66,7 +66,7 @@
           {% if products_to_display < 4 and products_to_display>0 %}
           {%- for i in (products_to_display..3) -%}
           <li class="grid__item">
-            {% render 'product-card-placeholder' %}
+            {% render 'empty-product-card' %}
           </li>
           {%- endfor -%}
           {%- endif -%}

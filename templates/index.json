@@ -111,11 +111,20 @@
           "settings": {
             "text": "<p>Farm Events<\/p><p><\/p><p><a href=\"\/pages\/events\" title=\"Events\"><strong>More Information<\/strong><\/a><\/p>"
           }
+        },
+        "c1cb5741-65a5-458f-8d2e-ec417ddabced": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "More Information",
+            "button_link_1": "shopify:\/\/pages\/events",
+            "button_style_secondary_1": false
+          }
         }
       },
       "block_order": [
         "16276299100ebb3c7f-0",
-        "16276299100ebb3c7f-1"
+        "16276299100ebb3c7f-1",
+        "c1cb5741-65a5-458f-8d2e-ec417ddabced"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/beautiful-centerpiece-at-an-outdoor-wedding.jpg"

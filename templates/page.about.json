@@ -27,6 +27,12 @@
       "settings": {
       }
     },
+    "16280103909f50c0c7": {
+      "type": "image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/sheep-on-farm-land.jpg"
+      }
+    },
     "1627704843ea7b4b94": {
       "type": "farming-practices",
       "settings": {
@@ -59,6 +65,7 @@
     "main",
     "162766114274f75b3f",
     "rich-text",
+    "16280103909f50c0c7",
     "1627704843ea7b4b94",
     "1627705273d7b7d14a"
   ]

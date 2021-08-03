@@ -4,9 +4,16 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "16280148551ad27d35": {
+      "type": "image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/bins-of-apples-at-a-farmer-s-market.jpg"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16280148551ad27d35"
   ]
 }

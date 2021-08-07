@@ -388,13 +388,13 @@ h6,
 
 p,
 .p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 @media only screen and (min-width: 750px) {
   p,
   .p {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 }
 

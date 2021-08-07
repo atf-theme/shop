@@ -3,6 +3,9 @@
     "colors_accent_2": "#7e726a",
     "type_header_font": "raleway_n8",
     "type_body_font": "montserrat_n5",
+    "social_twitter_link": "https:\/\/twitter.com\/shopify",
+    "social_facebook_link": "https:\/\/facebook.com\/shopify",
+    "social_instagram_link": "http:\/\/instagram.com\/shopify",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -39,7 +42,7 @@
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/allthefarms-logomark.png",
-              "image_width": 100,
+              "image_width": 200,
               "alignment": "center"
             }
           },

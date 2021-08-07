@@ -54,7 +54,7 @@
             "type": "text",
             "settings": {
               "heading": "Hours",
-              "subtext": "<p>Info here.<\/p>"
+              "subtext": "<p>Mon - Fri: Closed<\/p><p>Sat: 9AM - 6PM<\/p><p>Sun: 9AM - 6PM<\/p>"
             }
           }
         },
@@ -64,7 +64,7 @@
           "c364dd73-bcf2-487c-97f8-6e345e3ed5f7"
         ],
         "settings": {
-          "show_social": false,
+          "show_social": true,
           "payment_enable": true
         }
       }

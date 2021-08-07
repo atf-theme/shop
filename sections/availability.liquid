@@ -1,12 +1,107 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+<link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'section-rich-text.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="container">
+{%- for block in section.blocks -%}
+  <div class="availibility">
+    <div class="availibility_header" {{ block.shopify_attributes }}>
+      <h2 class="white">{{ block.settings.header_text }}</h2 class="white">
+    </div>
+    <div class="availibility_body"{{ block.shopify_attributes }}>{{ block.settings.body_text }}</div>
+  </div>
+{%- endfor -%}
+</div>
+
+<style>
+  
+  @media screen and (min-width: 750px) {
+  .container{
+    margin: 7.5% 7.5%;
+   	margin-left: 10%;
+    margin-right: 10%;
   }
+}
+    .container{
+    margin: 7.5% 7.5%
+  }
+
+  
+  .white{
+    display: flex;
+    color: white;
+    align-self: center;
+  }
+  
+  .availibility {
+    margin: 1.5rem;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+  }
+  
+  .availibility_header{
+    display: flex;
+    background-color: #445958;
+    width:35%;
+    padding-left: 2%;
+    padding-right: 2%;
+    line-height: 200px; 
+  }
+  
+  .availibility_body{
+    display: flex;
+    background-color: #FAF1E9;
+    width:65%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  
+    .availibility_body p{
+    display: flex;
+    word-break: break-word;
+  }
+  
+</style>
+
+{% schema %}
+{
+  "name": "Availability",
+  "tag": "section",
+  "class": "spaced-section spaced-section--full-width",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "t:sections.rich-text.blocks.text.name",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "text",
+          "id": "header_text",
+		  "default": "CSA",
+          "label": "t:sections.rich-text.blocks.heading.settings.heading.label"
+        }, 
+		{
+          "type": "richtext",
+          "id": "body_text",
+          "default": "<p>Link or information about where to buy</p>",
+          "label": "t:sections.rich-text.blocks.text.settings.text.label"
+		}
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Availability",
+      "blocks": [
+        {
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}

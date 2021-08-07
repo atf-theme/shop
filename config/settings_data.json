@@ -35,24 +35,36 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "footer-0": {
-            "type": "link_list",
+          "447e8d7d-3563-436d-8ec5-b365ff862cd3": {
+            "type": "image",
             "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
+              "image": "shopify:\/\/shop_images\/allthefarms-logomark.png",
+              "image_width": 100,
+              "alignment": "center"
+            }
+          },
+          "d432c23a-75ac-431e-9079-28d9e3c64a02": {
+            "type": "text",
+            "settings": {
+              "heading": "Location",
+              "subtext": "<p>Info here.<\/p>"
+            }
+          },
+          "c364dd73-bcf2-487c-97f8-6e345e3ed5f7": {
+            "type": "text",
+            "settings": {
+              "heading": "Hours",
+              "subtext": "<p>Info here.<\/p>"
             }
           }
         },
         "block_order": [
-          "footer-0"
+          "447e8d7d-3563-436d-8ec5-b365ff862cd3",
+          "d432c23a-75ac-431e-9079-28d9e3c64a02",
+          "c364dd73-bcf2-487c-97f8-6e345e3ed5f7"
         ],
         "settings": {
-          "color_scheme": "background-1",
-          "newsletter_enable": true,
-          "newsletter_heading": "Sign up to our emails",
           "show_social": false,
-          "enable_country_selector": true,
-          "enable_language_selector": true,
           "payment_enable": true
         }
       }

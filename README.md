@@ -9,7 +9,6 @@ Password: twiyun<br />
 The theme was built upon Shopify's reference Dawn theme which was customized to better serve farmers.
 
 ## Prototypes
-Wireframe v1<br />
 ![Imgur](https://i.imgur.com/EMr3B4m.png)
 
 ## Homepage

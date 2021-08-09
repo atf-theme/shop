@@ -27,81 +27,77 @@
       "settings": {
       }
     },
-    "1627685845e5c4f80a": {
-      "type": "multicolumn",
+    "162847574816f0cb18": {
+      "type": "gallery",
       "blocks": {
-        "1627685845e5c4f80a-0": {
+        "162847574816f0cb18-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sheep-on-farm-land.jpg"
+          }
+        },
+        "162847574816f0cb18-1": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/nature-mountains-flower-landscape-adventure.jpg"
           }
         },
-        "1627685845e5c4f80a-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/hiking-the-path-up.jpg"
-          }
-        },
-        "1627685845e5c4f80a-2": {
+        "162847574816f0cb18-2": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/thin-plant-stems-in-sun.jpg"
           }
         },
-        "1c052aa3-d50c-4748-85b4-2a5603172db6": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/cute-curious-cat.jpg"
-          }
-        },
-        "e290421f-41d2-43b0-b3ba-e1c7b9084b22": {
+        "a104bd66-a996-4623-a7fd-a8079154ecee": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/dog-running-in-fall-leaves.jpg"
           }
         },
-        "bf2680cc-a99f-4907-87d8-ad5af3f4d33e": {
+        "72a237b1-c4f9-455b-a3ef-7d19d2d2dcec": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/thin-plant-stems-in-sun.jpg"
+          }
+        },
+        "8bbab69a-a513-46c2-bb90-6d3b4aff8ea6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hiking-the-path-up.jpg"
+          }
+        },
+        "c03e78a6-78da-47f2-afb7-4c2ad7cc04c5": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bikes-take-the-turn.jpg"
+          }
+        },
+        "adac4c91-2b89-41cc-a8d3-e768ffa4f2ca": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/couple-in-love-walk-holding-hands.jpg"
           }
         },
-        "296cde09-1c18-44ce-9e0c-3d67cbaa9b42": {
+        "72c1eedf-b4cf-48ee-9bc9-65c95b23aef7": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/golden-autumn-leaves.jpg"
-          }
-        },
-        "0308b266-70cb-4af3-bb50-392f6a046370": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/peaches.jpg"
-          }
-        },
-        "4b1e9e28-ab8d-4c8c-b421-5c8fe20490f7": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/bikes-take-the-turn.jpg"
+            "image": "shopify:\/\/shop_images\/cute-curious-cat.jpg"
           }
         }
       },
       "block_order": [
-        "1627685845e5c4f80a-0",
-        "1627685845e5c4f80a-1",
-        "1627685845e5c4f80a-2",
-        "1c052aa3-d50c-4748-85b4-2a5603172db6",
-        "e290421f-41d2-43b0-b3ba-e1c7b9084b22",
-        "bf2680cc-a99f-4907-87d8-ad5af3f4d33e",
-        "296cde09-1c18-44ce-9e0c-3d67cbaa9b42",
-        "0308b266-70cb-4af3-bb50-392f6a046370",
-        "4b1e9e28-ab8d-4c8c-b421-5c8fe20490f7"
+        "162847574816f0cb18-0",
+        "162847574816f0cb18-1",
+        "162847574816f0cb18-2",
+        "a104bd66-a996-4623-a7fd-a8079154ecee",
+        "72a237b1-c4f9-455b-a3ef-7d19d2d2dcec",
+        "8bbab69a-a513-46c2-bb90-6d3b4aff8ea6",
+        "c03e78a6-78da-47f2-afb7-4c2ad7cc04c5",
+        "adac4c91-2b89-41cc-a8d3-e768ffa4f2ca",
+        "72c1eedf-b4cf-48ee-9bc9-65c95b23aef7"
       ],
       "settings": {
-        "title": "",
-        "image_width": "full",
-        "image_ratio": "square",
-        "column_alignment": "left",
-        "background_style": "none"
+        "title": ""
       }
     }
   },
@@ -109,6 +105,6 @@
     "main",
     "16276611577864f9e1",
     "rich-text",
-    "1627685845e5c4f80a"
+    "162847574816f0cb18"
   ]
 }

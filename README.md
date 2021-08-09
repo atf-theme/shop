@@ -13,4 +13,4 @@ Wireframe v1<br />
 ![Imgur](https://i.imgur.com/EMr3B4m.png)
 
 ## Homepage
-![Imgur](https://i.imgur.com/a/Bn3c85e.png)
+![Imgur](https://i.imgur.com/pU7LGE1.png)

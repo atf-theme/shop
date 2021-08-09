@@ -12,7 +12,6 @@
         <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">{{ section.settings.button_label | escape }}</a>
       {%- endif -%}
     </div>
-    <slider-component class="slider-mobile-gutter">
       <ul class="multicolumn-list grid grid--1-col{% if section.blocks.size > 3 %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}"
         id="Slider-{{ section.id }}"
         role="list"
@@ -26,17 +25,11 @@
           endfor
         -%}
         {%- for block in section.blocks -%}
-          <li class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}>
+          <li class="multicolumn-list__item grid__item center" {{ block.shopify_attributes }}>
             <div class="multicolumn-card">
               {%- if block.settings.image != blank -%}
-                {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
-                  {% assign spaced_image = true %}
-                {% endif %}
-                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--full-width{% if spaced_image %} multicolumn-card-spacing{% endif %}">
-                  <div class="media media--transparent media--{{ section.settings.image_ratio }}"
-                    {% if section.settings.image_ratio == 'adapt' %}
-                      style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
-                    {% endif %}>
+                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--full-width">
+                  <div class="media media--transparent media--square">
                     <img
                       srcset="{%- if block.settings.image.width >= 275 -%}{{ block.settings.image | img_url: '275x' }} 275w,{%- endif -%}
                         {%- if block.settings.image.width >= 550 -%}{{ block.settings.image | img_url: '550x' }} 550w,{%- endif -%}
@@ -79,14 +72,6 @@
           <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
         </div>
       {%- endif -%}
-    </slider-component>
-    <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
-      {%- if section.settings.button_label != blank -%}
-        <a class="button button--primary"{% if section.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ section.settings.button_link }}"{% endif %}>
-          {{ section.settings.button_label | escape }}
-        </a>
-      {%- endif-%}
-    </div>
   </div>
 </div>
 
@@ -101,46 +86,6 @@
       "id": "title",
       "default": "Multicolumn",
       "label": "t:sections.multicolumn.settings.title.label"
-    },
-    {
-      "type": "select",
-      "id": "image_ratio",
-      "options": [
-        {
-          "value": "adapt",
-          "label": "t:sections.multicolumn.settings.image_ratio.options__1.label"
-        },
-        {
-          "value": "portrait",
-          "label": "t:sections.multicolumn.settings.image_ratio.options__2.label"
-        },
-        {
-          "value": "square",
-          "label": "t:sections.multicolumn.settings.image_ratio.options__3.label"
-        },
-        {
-          "value": "circle",
-          "label": "t:sections.multicolumn.settings.image_ratio.options__4.label"
-        }
-      ],
-      "default": "adapt",
-      "label": "t:sections.multicolumn.settings.image_ratio.label"
-    },
-    {
-      "type": "select",
-      "id": "column_alignment",
-      "options": [
-        {
-          "value": "left",
-          "label": "t:sections.multicolumn.settings.column_alignment.options__1.label"
-        },
-        {
-          "value": "center",
-          "label": "t:sections.multicolumn.settings.column_alignment.options__2.label"
-        }
-      ],
-      "default": "left",
-      "label": "t:sections.multicolumn.settings.column_alignment.label"
     }
   ],
   "blocks": [

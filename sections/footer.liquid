@@ -77,8 +77,8 @@
                   <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
                       {%- assign image_size = block.settings.image_width | append: 'x' -%}
                       <img
-                        srcset= "{{ 'allthefarms-logomark.png' | img_url: image_size }}, {{ 'allthefarms-logomark.png' | img_url: image_size, scale: 2 }} 2x"
-                        src="{{ 'allthefarms-logomark.png' | img_url: '400x' }}"
+                        srcset= "{{ 'allthefarms-logomark.png' | asset_img_url: image_size }}, {{ 'allthefarms-logomark.png' | asset_img_url: image_size, scale: 2 }} 2x"
+                        src="{{ 'allthefarms-logomark.png' | asset_img_url: '400x' }}"
                         alt="{{ block.settings.image.alt | escape }}"
                         loading="lazy"
                         width="{{ block.settings.image.width }}"

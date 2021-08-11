@@ -74,7 +74,7 @@
                   {%- endif -%}
                 {%- when 'image' -%}
               	  <a href="https://www.allthefarms.com">
-                  <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
+                  <div class="footer-block__details-content footer-block-image center">
                       {%- assign image_size = block.settings.image_width | append: 'x' -%}
                       <img
                         srcset= "{{ 'allthefarms-logomark.png' | asset_img_url: image_size }}, {{ 'allthefarms-logomark.png' | asset_img_url: image_size, scale: 2 }} 2x"

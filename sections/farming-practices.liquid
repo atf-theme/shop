@@ -249,6 +249,7 @@
 </div>
 
 <style>
+  @media only screen and (min-width: 750px) {
   .{{section.id}} {
     display: flex;
     flex-wrap: wrap;
@@ -259,21 +260,45 @@
     padding-left: 15%;
     padding-right: 15%;
  	justify-content: center;
-}
+	}
+  }
+  
+  .{{section.id}} {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem;
+    margin-top: 0px;
+    margin-bottom: 2rem;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+ 	justify-content: center;
+	}
+  
   .farm__farming-practice {
     padding-top: 0px;
     padding-right: 25px;
     padding-bottom: 15px;
     padding-left: 25px;
+    display:flex;
+  }
+  
+  .farm__farming-practice-icon{
+    display:flex;
+    padding-right: 2%;
   }
   
  .farm__farming-practice-label{
+   display: flex;
+   align-self: center;
    font-size: 1.8rem;
   }
   
 @media only screen and (min-width: 750px) {
   .farm__farming-practice-label {
     font-size: 2.4rem;
+       display: flex;
+   align-self: center;
   }
 }
   </style>

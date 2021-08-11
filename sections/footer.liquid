@@ -75,15 +75,15 @@
                 {%- when 'image' -%}
               	  <a href="https://www.allthefarms.com">
                   <div class="footer-block__details-content footer-block-image center">
-                      {%- assign image_size = block.settings.image_width | append: 'x' -%}
+                      {%- assign image_size = 200 | append: 'x' -%}
                       <img
                         srcset= "{{ 'allthefarms-logomark.png' | asset_img_url: image_size }}, {{ 'allthefarms-logomark.png' | asset_img_url: image_size, scale: 2 }} 2x"
                         src="{{ 'allthefarms-logomark.png' | asset_img_url: '400x' }}"
                         alt="{{ block.settings.image.alt | escape }}"
                         loading="lazy"
-                        width="{{ block.settings.image.width }}"
-                        height="{{ block.settings.image.height }}"
-                        style="max-width: min(100%, {{ block.settings.image_width }}px);"
+                        width="200"
+                        height="200"
+                        style="max-width: min(100%, 200px);"
                       >
                     </div></a>
                 {%- endcase -%}

@@ -5,7 +5,7 @@
       "settings": {
       }
     },
-    "16276611577864f9e1": {
+    "image": {
       "type": "image",
       "settings": {
         "image": "shopify:\/\/shop_images\/outdoor-dessert-table-with-macarons-and-cake.jpg"
@@ -27,7 +27,7 @@
       "settings": {
       }
     },
-    "162847574816f0cb18": {
+    "gallery": {
       "type": "gallery",
       "blocks": {
         "162847574816f0cb18-0": {
@@ -103,8 +103,8 @@
   },
   "order": [
     "main",
-    "16276611577864f9e1",
+    "image",
     "rich-text",
-    "162847574816f0cb18"
+    "gallery"
   ]
 }

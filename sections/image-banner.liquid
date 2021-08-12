@@ -16,10 +16,6 @@
         width="{{ section.settings.image.width }}"
       >
     </div>
-  {%- elsif section.settings.image_2 == blank -%}
-    <div class="banner__media media{% if section.settings.image == blank %} placeholder{% endif %}">
-      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
-    </div>
   {%- endif -%}
   <div class="banner__content page-width" style="align-items: center;">
     <div class="banner__box">

@@ -18,7 +18,7 @@
           "type": "text",
           "settings": {
             "header_text": "CSA",
-            "body_text": "<p><a href=\"https:\/\/hentze-family-farm.business.site\/#details\" target=\"_blank\" title=\"https:\/\/hentze-family-farm.business.site\/#details\">Hentze Family Farm<\/a><\/p>"
+            "body_text": "<p>Example Link<\/p>"
           }
         },
         "farm-stands": {

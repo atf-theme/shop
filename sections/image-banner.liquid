@@ -2,7 +2,7 @@
 
 <div id="Banner-{{ section.id }}" class="banner">
   {%- if section.settings.image != blank -%}
-    <div class="banner__media media{% if section.settings.image == blank %} placeholder{% endif %}">
+    <div class="banner__media media">
       <img srcset="{%- if section.settings.image.width >= 375 -%}{{ section.settings.image | img_url: '375x' }} 375w,{%- endif -%}
         {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | img_url: '750x' }} 750w,{%- endif -%}
         {%- if section.settings.image.width >= 1100 -%}{{ section.settings.image | img_url: '1100x' }} 1100w,{%- endif -%}

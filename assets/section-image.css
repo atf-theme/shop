@@ -25,15 +25,6 @@
   position: relative;
 }
   
-  .banner__media-half {
-    width: 50%;
-  }
-  
-  .banner__media-half + .banner__media-half {
-    right: 0;
-    left: auto;
-  }
-  
   @media screen and (max-width: 749px) {
     .banner--stacked .banner__media-half {
       width: 100%;

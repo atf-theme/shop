@@ -31,16 +31,12 @@
   }
 }
   
-  @media screen and (min-width: 750px) {
-    .banner__media {
-      position: absolute;
-      height: 100%;
-    }
+@media screen and (min-width: 750px) {
+  .banner__media {
+    position: absolute;
+    height: 100%;
   }
-  
-  .banner--adapt {
-    height: auto;
-  }
+}
   
   @media screen and (max-width: 749px) {
     .banner--stacked:not(.banner--adapt) .banner__media {

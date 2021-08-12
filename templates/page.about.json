@@ -5,13 +5,13 @@
       "settings": {
       }
     },
-    "162766114274f75b3f": {
+    "image-1": {
       "type": "image",
       "settings": {
         "image": "shopify:\/\/shop_images\/italian-farm-buildings.jpg"
       }
     },
-    "rich-text": {
+    "rich-text-1": {
       "type": "rich-text",
       "blocks": {
         "text": {
@@ -27,13 +27,13 @@
       "settings": {
       }
     },
-    "16280103909f50c0c7": {
+    "image-2": {
       "type": "image",
       "settings": {
         "image": "shopify:\/\/shop_images\/farm-rows-of-green.jpg"
       }
     },
-    "1627704843ea7b4b94": {
+    "farming-practices": {
       "type": "farming-practices",
       "settings": {
         "certified_organic": true,
@@ -44,10 +44,10 @@
         "no_till_reduced_till": true
       }
     },
-    "1627705273d7b7d14a": {
+    "rich-text-2": {
       "type": "rich-text",
       "blocks": {
-        "1627705273d7b7d14a-1": {
+        "text": {
           "type": "text",
           "settings": {
             "text": "<p>If you grow-be it flowers or produce or just a patch of grass in your front lawn-then you know that growing without herbicides or pesticides makes for a lot more hand labor. So why do we put the extra work into growing sustainably? Obviously, we don’t want to live around, work around or eat chemicals, so we don’t put them on the food we grow. But in addition, we love the land we live on and view it as our opportunity to leave a little corner of the world as healthy and biodiverse as possible.<\/p>"
@@ -55,7 +55,7 @@
         }
       },
       "block_order": [
-        "1627705273d7b7d14a-1"
+        "text"
       ],
       "settings": {
       }
@@ -63,10 +63,10 @@
   },
   "order": [
     "main",
-    "162766114274f75b3f",
-    "rich-text",
-    "16280103909f50c0c7",
-    "1627704843ea7b4b94",
-    "1627705273d7b7d14a"
+    "image-1",
+    "rich-text-1",
+    "image-2",
+    "farming-practices",
+    "rich-text-2"
   ]
 }

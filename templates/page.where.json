@@ -18,7 +18,7 @@
           "type": "text",
           "settings": {
             "header_text": "CSA",
-            "body_text": "<p>Example Link<\/p>"
+            "body_text": "<p><a href=\"https:\/\/www.allthefarms.com\/\" target=\"_blank\" title=\"https:\/\/www.allthefarms.com\/\">Example Link<\/a><\/p>"
           }
         },
         "farm-stands": {

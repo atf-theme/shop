@@ -16,7 +16,7 @@
         width="{{ section.settings.image.width }}"
       >
     </div>
-  {%- elsif section.settings.image_2 == blank -%}
+  {%- elsif section.settings.image == blank -%}
     <div class="banner__media media{% if section.settings.image == blank %} placeholder{% endif %}">
       {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
     </div>

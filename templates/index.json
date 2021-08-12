@@ -149,6 +149,38 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/beautiful-centerpiece-at-an-outdoor-wedding.jpg"
       }
+    },
+    "1628804708151761f7": {
+      "type": "image-banner",
+      "blocks": {
+        "1628804708151761f7-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner"
+          }
+        },
+        "1628804708151761f7-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Give customers details about the banner image(s) or content on the template.<\/p>"
+          }
+        },
+        "1628804708151761f7-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false
+          }
+        }
+      },
+      "block_order": [
+        "1628804708151761f7-0",
+        "1628804708151761f7-1",
+        "1628804708151761f7-2"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -156,6 +188,7 @@
     "16275876157298bbfc",
     "16277195734d39e123",
     "16280115471b2726b7",
-    "16276299100ebb3c7f"
+    "16276299100ebb3c7f",
+    "1628804708151761f7"
   ]
 }

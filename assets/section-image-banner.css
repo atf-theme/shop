@@ -40,10 +40,6 @@
   }
 }
 
-.banner--adapt {
-  height: auto;
-}
-
 .banner__media .placeholder-svg {
   position: absolute;
   left: 0;

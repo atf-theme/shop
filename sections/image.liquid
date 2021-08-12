@@ -19,8 +19,8 @@
         {% if section.settings.image_2 != blank %}class="banner__media-image-half"{% endif %}
       >
     </div>
-  {%- elsif section.settings.image_2 == blank -%}
-    <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
+  {%- elsif section.settings.image == blank -%}
+    <div class="banner__media media{% if section.settings.image == blank %} placeholder{% endif %}">
       {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
     </div>
   {%- endif -%}

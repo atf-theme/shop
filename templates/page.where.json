@@ -5,65 +5,65 @@
       "settings": {
       }
     },
-    "162801472015a90c1d": {
+    "image": {
       "type": "image",
       "settings": {
         "image": "shopify:\/\/shop_images\/bins-of-apples-at-a-farmer-s-market.jpg"
       }
     },
-    "162801655759404ee2": {
+    "availability": {
       "type": "availability",
       "blocks": {
-        "c87851c6-85bb-4051-8a48-fe43908095c7": {
+        "csa": {
           "type": "text",
           "settings": {
             "header_text": "CSA",
             "body_text": "<p><a href=\"https:\/\/hentze-family-farm.business.site\/#details\" target=\"_blank\" title=\"https:\/\/hentze-family-farm.business.site\/#details\">Hentze Family Farm<\/a><\/p>"
           }
         },
-        "4f93525c-37bf-4b99-a6dc-9eb2444c3428": {
+        "farm-stands": {
           "type": "text",
           "settings": {
             "header_text": "Farm Stands",
             "body_text": "<p>Link or information about where to buy<\/p>"
           }
         },
-        "16c16be3-aaf4-4ef3-a918-8711287b3645": {
+        "farmer-market": {
           "type": "text",
           "settings": {
             "header_text": "Farmer's Markets",
             "body_text": "<p>Link or information about where to buy<\/p>"
           }
         },
-        "b1019739-2d46-4ba9-b789-fa938d2f148d": {
+        "grocery": {
           "type": "text",
           "settings": {
             "header_text": "Grocery Stores",
             "body_text": "<p>Link or information about where to buy<\/p>"
           }
         },
-        "c7c40137-a761-45ae-833e-77a3c40e6ba2": {
+        "couriers": {
           "type": "text",
           "settings": {
             "header_text": "Couriers",
             "body_text": "<p>Link or information about where to buy<\/p>"
           }
         },
-        "e9036407-db3a-4a0e-accd-8785a00ce855": {
+        "restaurants": {
           "type": "text",
           "settings": {
             "header_text": "Restaurants",
             "body_text": "<p>Link or information about where to buy<\/p>"
           }
         },
-        "1d513b2a-c233-4e61-846d-597c8ec37511": {
+        "u-pick": {
           "type": "text",
           "settings": {
             "header_text": "U-Pick",
             "body_text": "<p>Link or information about where to buy<\/p>"
           }
         },
-        "ef3016cc-1e06-42f0-9b3d-571081faf29d": {
+        "wholesale": {
           "type": "text",
           "settings": {
             "header_text": "Wholesale",
@@ -72,14 +72,14 @@
         }
       },
       "block_order": [
-        "c87851c6-85bb-4051-8a48-fe43908095c7",
-        "4f93525c-37bf-4b99-a6dc-9eb2444c3428",
-        "16c16be3-aaf4-4ef3-a918-8711287b3645",
-        "b1019739-2d46-4ba9-b789-fa938d2f148d",
-        "c7c40137-a761-45ae-833e-77a3c40e6ba2",
-        "e9036407-db3a-4a0e-accd-8785a00ce855",
-        "1d513b2a-c233-4e61-846d-597c8ec37511",
-        "ef3016cc-1e06-42f0-9b3d-571081faf29d"
+        "csa",
+        "farm-stands",
+        "farmer-market",
+        "grocery",
+        "couriers",
+        "restaurants",
+        "u-pick",
+        "wholesale"
       ],
       "settings": {
       }
@@ -87,7 +87,7 @@
   },
   "order": [
     "main",
-    "162801472015a90c1d",
-    "162801655759404ee2"
+    "image",
+    "availability"
   ]
 }

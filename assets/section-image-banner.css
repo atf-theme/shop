@@ -48,7 +48,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  opacity: 1;
+  background: white;
   height: 100%;
   width: 100%;
 }

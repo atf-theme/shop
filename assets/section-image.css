@@ -38,42 +38,28 @@
   }
 }
   
-  @media screen and (max-width: 749px) {
-    .banner--stacked:not(.banner--adapt) .banner__media {
-      height: 39rem;
-    }
+.banner__media .placeholder-svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
   
-    .banner::before {
-      display: none !important;
-    }
+.banner__content {
+  padding: 0;
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+}
   
-    .banner--stacked .banner__media-image-half {
-      width: 100%;
-    }
-  }
-  
-  .banner__media .placeholder-svg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-  }
-  
+@media screen and (min-width: 750px) {
   .banner__content {
-    padding: 0;
-    display: flex;
-    position: relative;
-    width: 100%;
-    justify-content: center;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
   }
-  
-  @media screen and (min-width: 750px) {
-    .banner__content {
-      padding-bottom: 5rem;
-      padding-top: 5rem;
-    }
-  }
+}
   
 .banner__box {
   border: 0;

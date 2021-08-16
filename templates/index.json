@@ -6,13 +6,13 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "HENTZE FAMILY FARM"
+            "heading": "YOUR FARM NAME"
           }
         },
         "2e6f8791-e355-48ef-9455-351e59d11056": {
           "type": "text",
           "settings": {
-            "text": "<p>Century Family Farm in Junction City<\/p>"
+            "text": "<p>Enter a short tagline<\/p>"
           }
         }
       },
@@ -21,7 +21,6 @@
         "2e6f8791-e355-48ef-9455-351e59d11056"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/small-family-tends-to-their-cows.jpg"
       }
     },
     "16275876157298bbfc": {
@@ -36,7 +35,7 @@
         "16275876157298bbfc-1": {
           "type": "text",
           "settings": {
-            "text": "<p>A small family farm in the South Willamette Valley established in 1902. Currently the fifth generation has joined the farm to try and revitalize and steward the farm. There is a produce stand and a small cook shack on the farm. Over the season we have a few events, our Cherry Festival, and OctoberFest - a celebration of Fall Harvest with a U-Pick Pumpkin Patch. <br\/><br\/><a href=\"\/pages\/about-us\" title=\"About Us\"><em>Read More<\/em><\/a><\/p>"
+            "text": "<p>Write a short paragraph about your farm.<\/p><p><\/p><p><a href=\"\/pages\/about-us\" title=\"About Us\"><em>Read More<\/em><\/a><\/p>"
           }
         }
       },
@@ -53,25 +52,25 @@
         "16277195734d39e123-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "fruits"
+            "collection": ""
           }
         },
         "16277195734d39e123-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "vegetables"
+            "collection": ""
           }
         },
         "16277195734d39e123-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": "squash"
+            "collection": ""
           }
         },
         "d128f8ab-f7fd-4770-9805-c50a6a37cbe6": {
           "type": "featured_collection",
           "settings": {
-            "collection": "nuts"
+            "collection": ""
           }
         },
         "16277195734d39e123-3": {
@@ -147,7 +146,6 @@
         "c1cb5741-65a5-458f-8d2e-ec417ddabced"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/beautiful-centerpiece-at-an-outdoor-wedding.jpg"
       }
     }
   },
